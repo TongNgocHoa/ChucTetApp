@@ -42,11 +42,11 @@ public class HomeFragment extends Fragment {
     }
     private void getData(){
        list.add(new CauDoi(1,"ABC","dasd","ds","das"));
-        list.add(new CauDoi(1,"ABC","dasd","ds","das"));
-        list.add(new CauDoi(1,"ABC","dasd","ds","das"));
-        list.add(new CauDoi(1,"ABC","dasd","ds","das"));
-        list.add(new CauDoi(1,"ABC","dasd","ds","das"));
-        list.add(new CauDoi(1,"ABC","dasd","ds","das"));
+        list.add(new CauDoi(2,"ABC","dasd","ds","das"));
+        list.add(new CauDoi(3,"ABC","dasd","ds","das"));
+        list.add(new CauDoi(4,"ABC","dasd","ds","das"));
+        list.add(new CauDoi(5,"ABC","dasd","ds","das"));
+        list.add(new CauDoi(6,"ABC","dasd","ds","das"));
 
     }
 }

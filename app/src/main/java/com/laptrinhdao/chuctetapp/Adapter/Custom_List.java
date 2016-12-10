@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.laptrinhdao.chuctetapp.Model.CauDoi;
 import com.laptrinhdao.chuctetapp.R;
@@ -44,12 +45,19 @@ public class Custom_List extends RecyclerView.Adapter<Custom_List.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView txtTitle,txtMotangan,txtTen,txtNgay;
-        public ViewHolder(View itemView) {
+        public ViewHolder(final View itemView) {
             super(itemView);
             txtTitle = (TextView)itemView.findViewById(R.id.txtTitle);
             txtMotangan = (TextView) itemView.findViewById(R.id.txtContent);
             txtTen = (TextView) itemView.findViewById(R.id.txtName);
             txtNgay = (TextView) itemView.findViewById(R.id.txtDate);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    CauDoi c = list.get(getAdapterPosition());
+                    Toast.makeText(context,c.getIdcaudoi()+"",Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }
