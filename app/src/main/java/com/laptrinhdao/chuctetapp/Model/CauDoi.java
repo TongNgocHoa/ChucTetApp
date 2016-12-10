@@ -9,14 +9,7 @@ public class CauDoi {
     public String ngaydang;
     public String taikhoan;
 
-    public CauDoi(int idcaudoi, String tieude, String motangan, String ngaydang, String taikhoan) {
-        this.idcaudoi = idcaudoi;
-        this.tieude = tieude;
-        this.motangan = motangan;
-        this.noidung = noidung;
-        this.ngaydang = ngaydang;
-        this.taikhoan = taikhoan;
-    }
+
 
     public int getIdcaudoi() {
         return idcaudoi;
